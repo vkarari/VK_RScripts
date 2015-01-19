@@ -1,0 +1,17 @@
+{
+    "contents" : "setwd(\"E:/ALPHA/Flat_tables\")\nkft<-read.csv(\"All_Kbr_flat_table.csv\",sep=\",\",head=T)\ndim(kft)\ncolnames(kft)\n\nplot(kft[,200])\n\nb<-which(kft[,200]<0.5)\n\nkft2<-kft[-b,]\n\nplot(kft2[,200])\n\nkft[b,1]\n",
+    "created" : 1421650565443.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1351661360",
+    "id" : "AFD1938A",
+    "lastKnownWriteTime" : 1421650618,
+    "path" : "D:/GIT/VK_RScripts/AlphaSpecraTroubleshooting/Kbr-Specra-Troubleshooting.R",
+    "project_path" : "Kbr-Specra-Troubleshooting.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
